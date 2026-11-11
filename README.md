@@ -1,5 +1,5 @@
 🏠 Description of JHouse — Real Estate Data Manager in C
-JHouse is a command-line program written in C that allows you to display, search, sort, and export real estate property data from a CSV file. It’s designed for working with datasets containing location, price, rooms, bathrooms, and more.
+JHouse is a command-line (CLI) program written in C that allows you to display, search, sort, and export real estate property data from a CSV file. It’s designed for working with datasets containing location, price, rooms, bathrooms, and more.
 
 📌 Features
 1. Display Data — Show a set number of property listings from the CSV file.
