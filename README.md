@@ -1,9 +1,12 @@
-🏠 Description of JHouse — Real Estate Data Manager coded in C
-JHouse is a command-line (CLI) program written in C that allows you to display, search, sort, and export real estate property data from a CSV file. It’s designed for working with datasets containing location, price, rooms, bathrooms, and more.
+# JHouse
+JHouse is a command-line (CLI) program written in C that allows you to display, search, sort, and export real estate property data from a CSV file. It’s designed for working with datasets containing location, price, rooms, bathrooms, and more. The dataset used in this project is included on the repository named JHouse_Data.csv.
 
-📌 Features
-1. Display Data — Show a set number of property listings from the CSV file.
-2. Search Data — Find properties by:
+# Tech
+- C++
+
+# Features
+1. Display Data - Show a set number of property listings from the CSV file.
+2. Search Data - Find properties by:
 - Location
 - City
 - Price
@@ -12,23 +15,14 @@ JHouse is a command-line (CLI) program written in C that allows you to display, 
 - Number of Carparks
 - Type of property
 - Furnishing status
-3. Sort Data — Sort by any column in ascending (asc) or descending (desc) order.
-4. Export Data — Save the currently displayed or searched data into a new .csv file.
+3. Sort Data - Sort by any column in ascending (asc) or descending (desc) order.
+4. Export Data - Save the currently displayed or searched data into a new .csv file.
 
-
-📄 CSV Format
-The program reads data from file.csv with the following semicolon-separated format:
-Location; City; Price; Rooms; Bathroom; Carpark; Type; Furnish
-123 Main St; New York; 300000; 3; 2; 1; Apartment; Fully Furnished
-456 Oak Ave; Chicago; 250000; 4; 3; 2; House; Semi Furnished
-etc...
-⚠️ Make sure the file uses ; (semicolon) as separators, except for the last column which ends at newline. For testing, please use the Jhouse_Data.csv
-
-⚙️ How to Compile & Run
+# How to Compile & Run
 1. Compile: gcc main.c -o jhouse
 2. Run: ./jhouse
 
-🖥️ Usage Flow
+# Usage Flow
 When you run the program, you’ll see a menu:
 JHouse
 What do you want to do?
@@ -53,7 +47,7 @@ What do you want to do?
 - Saves the currently displayed or searched data into a new CSV file.
 - Allow custom filename input. Example: entering "output" will create "output.csv".
 
-🛠 Example Run (Data is just an Example)
+Example Run (Data is just an Example)
 Location; City; Price; Rooms; Bathroom; Carpark; Type; Furnish
 123 Main St; New York; 300000; 3; 2; 1; Apartment; Fully Furnished
 456 Oak Ave; Chicago; 250000; 4; 3; 2; House; Semi Furnished
@@ -74,10 +68,18 @@ Location                 City                Price     Rooms     Bathroom  Carpa
 456 Oak Ave              Chicago             250000    4         3         2         House       Semi Furnished
 789 Pine Rd              Boston              200000    2         1         0         Condo       Unfurnished
 
-✍️ Author
-- Johannes Aaron Framon
+# CSV Format
+The program reads data from file.csv with the following semicolon-separated format:
+Location; City; Price; Rooms; Bathroom; Carpark; Type; Furnish
+123 Main St; New York; 300000; 3; 2; 1; Apartment; Fully Furnished
+456 Oak Ave; Chicago; 250000; 4; 3; 2; House; Semi Furnished
+etc...
+Make sure the file uses ; (semicolon) as separators, except for the last column which ends at newline. For testing, please use the Jhouse_Data.csv
 
-📌 Notes & Limitations
+# What I Learned
+This small project taught me how to make a small command-line (CLI) program that allows user to display, search, sort, and export real estate property data from a CSV file. 
+
+# Notes & Limitations
 - The program is designed specifically for the Jhouse_Data file, making up to 4000 rows of data.
 - Data is loaded fresh from the CSV for each search/sort.
 - Sorting uses a bubble sort algorithm — fine for small datasets but not optimized for huge files.
