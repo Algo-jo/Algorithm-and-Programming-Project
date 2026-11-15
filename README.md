@@ -1,10 +1,10 @@
-## JHouse
+# JHouse
 JHouse is a command-line (CLI) program written in C that allows you to display, search, sort, and export real estate property data from a CSV file. It’s designed for working with datasets containing location, price, rooms, bathrooms, and more. The dataset used in this project is included on the repository named JHouse_Data.csv.
 
-# Tech
+## Tech
 - C++
 
-# Features
+## Features
 1. Display Data - Show a set number of property listings from the CSV file.
 2. Search Data - Find properties by:
 - Location
@@ -18,11 +18,11 @@ JHouse is a command-line (CLI) program written in C that allows you to display, 
 3. Sort Data - Sort by any column in ascending (asc) or descending (desc) order.
 4. Export Data - Save the currently displayed or searched data into a new .csv file.
 
-# How to Compile & Run
+## How to Compile & Run
 1. Compile: gcc main.c -o jhouse
 2. Run: ./jhouse
 
-# Usage Flow
+## Usage Flow
 When you run the program, you’ll see a menu:
 JHouse
 What do you want to do?
@@ -68,7 +68,7 @@ Location                 City                Price     Rooms     Bathroom  Carpa
 456 Oak Ave              Chicago             250000    4         3         2         House       Semi Furnished
 789 Pine Rd              Boston              200000    2         1         0         Condo       Unfurnished
 
-# CSV Format
+## CSV Format
 The program reads data from file.csv with the following semicolon-separated format:
 Location; City; Price; Rooms; Bathroom; Carpark; Type; Furnish
 123 Main St; New York; 300000; 3; 2; 1; Apartment; Fully Furnished
@@ -76,10 +76,10 @@ Location; City; Price; Rooms; Bathroom; Carpark; Type; Furnish
 etc...
 Make sure the file uses ; (semicolon) as separators, except for the last column which ends at newline. For testing, please use the Jhouse_Data.csv
 
-# What I Learned
-This small project taught me how to make a small command-line (CLI) program that allows user to display, search, sort, and export real estate property data from a CSV file. 
+## What I Learned
+This small project taught me how to make a small command-line (CLI) program that allows user to display, search, sort, and export real estate property data from a CSV file. This also taught my thoroughness since this project has many features (data column) and repetitive code which make it harder to debug. But at the end, I manage to complete this project even though the program has a bit of higher time complexity due to its many linear loops and if-else statements.
 
-# Notes & Limitations
+## Notes & Limitations
 - The program is designed specifically for the Jhouse_Data file, making up to 4000 rows of data.
 - Data is loaded fresh from the CSV for each search/sort.
 - Sorting uses a bubble sort algorithm — fine for small datasets but not optimized for huge files.
