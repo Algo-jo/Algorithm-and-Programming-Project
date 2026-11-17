@@ -5,8 +5,10 @@ JHouse is a command-line (CLI) program written in C that allows you to display, 
 - C++
 
 ## Features
-1. Display Data - Show a set number of property listings from the CSV file.
-2. Search Data - Find properties by:
+1. Display Data
+- Show a set number of property listings from the CSV file.
+
+2. Search Data by:
 - Location
 - City
 - Price
@@ -15,8 +17,12 @@ JHouse is a command-line (CLI) program written in C that allows you to display, 
 - Number of Carparks
 - Type of property
 - Furnishing status
-3. Sort Data - Sort by any column in ascending (asc) or descending (desc) order.
-4. Export Data - Save the currently displayed or searched data into a new .csv file.
+  
+3. Sort Data
+- Sort by any column in ascending (asc) or descending (desc) order.
+
+5. Export Data
+- Save the currently displayed or searched data into a new .csv file.
 
 ## How to Compile & Run
 1. Compile: gcc main.c -o jhouse
@@ -31,7 +37,8 @@ What do you want to do?
 3. Sort Data
 4. Export Data
 5. Exit
-   
+
+Explanation:
 1. Display Data
 - Shows the first N rows from the dataset.
 
@@ -77,10 +84,10 @@ etc...
 Make sure the file uses ; (semicolon) as separators, except for the last column which ends at newline. For testing, please use the Jhouse_Data.csv
 
 ## What I Learned
-This small project taught me how to make a small command-line (CLI) program that allows user to display, search, sort, and export real estate property data from a CSV file. This also taught my thoroughness since this project has many features (data column) and repetitive code which make it harder to debug. But at the end, I manage to complete this project even though the program has a bit of higher time complexity due to its many linear loops and if-else statements.
+This small project taught me how to build a small command-line (CLI) program that allows user to display, search, sort, and export real estate property data from a CSV file. This also taught my thoroughness since this project has many features (data column) and repetitive code which make it harder to debug. But at the end, I manage to complete this project even though the program has a bit of higher time complexity due to its many linear loops and if-else statements.
 
-## Notes & Limitations
+## Notes
 - The program is designed specifically for the Jhouse_Data file, making up to 4000 rows of data.
 - Data is loaded fresh from the CSV for each search/sort.
-- Sorting uses a bubble sort algorithm — fine for small datasets but not optimized for huge files.
+- Sorting uses a bubble sort algorithm, which is fine for small datasets but not optimized for huge files.
 - CSV must match the exact column order in the code.
